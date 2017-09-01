@@ -25,9 +25,19 @@
             "defaultValue": null,
             "type": "SecureString"
         },
-        "existingVNET": {
+        "VNET": {
             "defaultValue": null,
-            "type": "SecureString"
+            "type": "SecureString",
+            "metadata": {
+                "description": "Type the existing VNET Name in which you wish to provision your Palo Alto Firewalls"
+	    }
+        },
+        "Subnet": {
+            "defaultValue": null,
+            "type": "SecureString",
+            "metadata": {
+                "description": "Type the existing Subnet Name in which you wish to provision your Palo Alto Firewalls"
+	    }
         }
     },
     "variables": {
